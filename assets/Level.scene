@@ -134,48 +134,11 @@
         },
         {
             "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
-            "id": "059de0ce-ee6f-477a-bda1-9bfedeb28595",
-            "label": "coinGold",
-            "components": [],
-            "x": 440,
-            "y": 326
-        },
-        {
-            "type": "Image",
-            "id": "8907e544-8fbe-459a-a6c7-543d6f291ea6",
-            "label": "coinGold_1",
-            "components": [],
-            "texture": {
-                "key": "coinGold"
-            },
-            "x": 661,
-            "y": 311
-        },
-        {
-            "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
-            "id": "f349604b-9643-473a-970c-8db1129130aa",
+            "id": "86ec9892-74a4-4f39-b72a-054a160b0345",
             "unlock": [
+                "playerX",
                 "player"
             ],
-            "label": "coinGold_2",
-            "components": [],
-            "x": 357,
-            "y": 380
-        },
-        {
-            "type": "Image",
-            "id": "94f5c80e-fa8d-4e94-9522-4b2be5b4dece",
-            "label": "coinGold_3",
-            "components": [],
-            "texture": {
-                "key": "coinGold"
-            },
-            "x": 600,
-            "y": 310
-        },
-        {
-            "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
-            "id": "86ec9892-74a4-4f39-b72a-054a160b0345",
             "label": "coinGold_4",
             "components": [],
             "x": 275,
@@ -185,7 +148,7 @@
             "type": "Sprite",
             "id": "e00ca9a8-ef7e-4285-b312-9c126441aee4",
             "label": "player",
-            "scope": "PUBLIC",
+            "scope": "CLASS",
             "components": [
                 "Physics",
                 "Movement"
@@ -222,10 +185,12 @@
             "texture": {
                 "key": "grassHalfMid"
             },
-            "x": 1812,
-            "y": 598,
+            "x": 861,
+            "y": 577,
             "scaleX": 27.69972252797321,
-            "scaleY": 0.8964360514885276
+            "scaleY": 0.9979427472294765,
+            "originX": 0.010243866509496208,
+            "originY": 0.2338179430829249
         },
         {
             "prefabId": "cd33475f-935c-49d1-bef6-e13482381fb9",
@@ -244,6 +209,15 @@
             "components": [],
             "x": 767,
             "y": 306
+        },
+        {
+            "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
+            "id": "e0c6e26a-7e03-4a4b-a186-2b30fd9f39cc",
+            "label": "coinGold",
+            "scope": "PUBLIC",
+            "components": [],
+            "x": 353,
+            "y": 380
         }
     ],
     "plainObjects": [],
@@ -267,6 +241,14 @@
                 "bb42ac22-0c01-488a-a591-90b0d0058f3a",
                 "342f5597-fed4-4e44-9c23-4418771949da",
                 "80f06cc9-791c-4483-8506-c60682263324"
+            ]
+        },
+        {
+            "id": "8d4d4e48-83a2-4e1d-99a4-11c0c2f14cf4",
+            "label": "coins",
+            "objectIds": [
+                "86ec9892-74a4-4f39-b72a-054a160b0345",
+                "e0c6e26a-7e03-4a4b-a186-2b30fd9f39cc"
             ]
         }
     ]

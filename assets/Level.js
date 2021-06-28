@@ -9,7 +9,7 @@ class Level extends Phaser.Scene {
 		super("Level");
 		
 		/* START-USER-CTR-CODE */
-		
+		//this.events.once(Phaser.Scenes.Events.UPDATE, this.config, this);
 		/* END-USER-CTR-CODE */
 	}
 	
@@ -48,20 +48,6 @@ class Level extends Phaser.Scene {
 		const grassHalfMid_2 = this.add.tileSprite(421, 595, 70, 70, "grassHalfMid");
 		grassHalfMid_2.scaleX = 11.985926286278405;
 		
-		// coinGold
-		const coinGold = new coinPrefab(this, 440, 326);
-		this.add.existing(coinGold);
-		
-		// coinGold_1
-		this.add.image(661, 311, "coinGold");
-		
-		// coinGold_2
-		const coinGold_2 = new coinPrefab(this, 357, 380);
-		this.add.existing(coinGold_2);
-		
-		// coinGold_3
-		this.add.image(600, 310, "coinGold");
-		
 		// coinGold_4
 		const coinGold_4 = new coinPrefab(this, 275, 441);
 		this.add.existing(coinGold_4);
@@ -74,9 +60,10 @@ class Level extends Phaser.Scene {
 		const bridge = this.add.image(443, 382, "bridge");
 		
 		// grassHalfMid
-		const grassHalfMid = this.add.image(1812, 598, "grassHalfMid");
+		const grassHalfMid = this.add.image(861, 577, "grassHalfMid");
 		grassHalfMid.scaleX = 27.69972252797321;
-		grassHalfMid.scaleY = 0.8964360514885276;
+		grassHalfMid.scaleY = 0.9979427472294765;
+		grassHalfMid.setOrigin(0.010243866509496208, 0.2338179430829249);
 		
 		// bridgeLogs
 		const bridgeLogs = new bridgePrefab(this, 681, 384);
@@ -86,8 +73,13 @@ class Level extends Phaser.Scene {
 		const flyFly1 = new enimesPrafeb(this, 767, 306);
 		this.add.existing(flyFly1);
 		
+		// coinGold
+		const coinGold = new coinPrefab(this, 353, 380);
+		this.add.existing(coinGold);
+		
 		// lists
 		const items = [grassHalfMid_2, bridge, bridge_2, bridge_1, grassHalfMid_1, grass, castleCenter, grassHalfMid, bridgeLogs, flyFly1]
+		const coins = [coinGold_4, coinGold]
 		
 		// bridge_1 (components)
 		new PhysicsBridges(bridge_1);
@@ -140,7 +132,12 @@ class Level extends Phaser.Scene {
 		this.bridge = bridge;
 		this.bridgeLogs = bridgeLogs;
 		this.flyFly1 = flyFly1;
+		this.coinGold = coinGold;
 		this.items = items;
+		this.coins = coins;
+
+
+		this.config()
 	}
 	
 	/** @type {Phaser.GameObjects.Image} */
@@ -159,27 +156,32 @@ class Level extends Phaser.Scene {
 	bridgeLogs;
 	/** @type {enimesPrafeb} */
 	flyFly1;
+	/** @type {coinPrefab} */
+	coinGold;
 	/** @type {Array<Phaser.GameObjects.TileSprite|Phaser.GameObjects.Image|bridgePrefab|enimesPrafeb>} */
 	items;
+	/** @type {coinPrefab[]} */
+	coins;
 	
 	/* START-USER-CODE */
 
 	// Write your code here.
-	
-	update(){
+
+	config(){
 		this.tiled_Forest_Background.setScrollFactor(0);
 		this.physics.add.collider(this.player, this.items);
+		this.physics.add.collider(this.player, this.coins);
 		
 		this.cameras.main.setBounds(0, 0, 3000, 600);
 		this.cameras.main.startFollow(this.player);
-			
-
-		if(this.player.x == this.flyFly1.x-36 || this.player.x == this.flyFly1.x+36){
-			this.player.x = 0;
-			this.player.y = 0;
-		}
+		//if(this.player.x == this.flyFly1.x-36 || this.player.x == this.flyFly1.x+36){
+		//	this.player.x = 0;
+		//	this.player.y = 0;
+		//}
 	}
 	
+	update() {
+	}
 
 	/* END-USER-CODE */
 }

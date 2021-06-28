@@ -36,7 +36,7 @@ class Movement extends EventComponent {
 		const body = this.gameObject.body;
 		body.setGravityY(9000);
 		this.jumpSound = this.scene.sound.add('jump')
-		this.coinSound = this.scene.sound.add('coin')
+		
 		this.deadSound = this.scene.sound.add('life lost sound')
 	}
 	
@@ -48,24 +48,22 @@ class Movement extends EventComponent {
 
 		if(!body) return;
 
-		if (this.cursors.up.isDown)
+		if (this.cursors.up.isDown && body.onFloor())
 		{
-			if (body.onFloor()) {
-				this.player.body.velocity.y = -1700;
+				body.velocity.y = -1700;
 				this.player.play('Jump', true)
 				this.jumpSound.play()
-			}
 		}
 
 		if (this.cursors.left.isDown)
 		{
-			body.setVelocity(-speed, 0)
+			body.velocity.x = -speed
 			this.player.flipX = true;
 			this.player.play('Run', true)
 		}
 		else if (this.cursors.right.isDown)
 		{
-			body.setVelocity(speed, 0)
+			body.velocity.x = speed
 			this.player.flipX = false
 			this.player.play('Run', true)
 		}
