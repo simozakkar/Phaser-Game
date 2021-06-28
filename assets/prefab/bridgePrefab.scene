@@ -1,0 +1,30 @@
+{
+    "id": "cd33475f-935c-49d1-bef6-e13482381fb9",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": ""
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "34b44ba1-fea2-41f7-94ef-faf07fb48663",
+            "label": "bridgeLogs",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "bridgeLogs"
+            },
+            "x": 680,
+            "y": 202
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType"
+    }
+}

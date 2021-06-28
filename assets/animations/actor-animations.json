@@ -1,0 +1,86 @@
+{
+    "anims": [
+        {
+            "key": "Idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "p1_stand",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 3,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "Run",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "p1_walk01",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "p1_walk02",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "p1_walk03",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "p1_walk04",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "p1_walk05",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "p1_walk06",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "p1_walk07",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "p1_walk08",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 10,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "Jump",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "p1_jump",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 6,
+            "skipMissedFrames": true,
+            "repeat": -1
+        }
+    ],
+    "globalTimeScale": 1,
+    "meta": {
+        "app": "Phaser Editor 2D v3",
+        "contentType": "Phaser v3 Animations"
+    }
+}

@@ -1,0 +1,273 @@
+{
+    "id": "01aefa93-6044-4159-8358-7e91310aa05f",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "sceneKey": "Level"
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "e8b88e38-0570-490a-a191-95f660543b31",
+            "label": "tiled_Forest_Background",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "tiled_Forest Background"
+            },
+            "x": 1,
+            "y": 2,
+            "scaleX": 0.7881921681790253,
+            "scaleY": 0.6524423588988446,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "8d999e0b-9c64-482e-8ffa-8ccfddd2e8ac",
+            "label": "bridge_1",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "bridge"
+            },
+            "x": 277,
+            "y": 491
+        },
+        {
+            "type": "Image",
+            "id": "e2cd550b-2251-4b54-8962-134a1722ee8a",
+            "label": "bridge_2",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "bridge"
+            },
+            "x": 359,
+            "y": 432
+        },
+        {
+            "type": "Image",
+            "id": "ae03073f-b11a-4ffd-b6f9-a22cba5500f4",
+            "label": "grass",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "Grass"
+            },
+            "x": 858,
+            "y": 411
+        },
+        {
+            "type": "Image",
+            "id": "84d94294-8f23-4026-9b4b-3bb96e84ca3f",
+            "label": "cactus",
+            "components": [],
+            "texture": {
+                "key": "cactus"
+            },
+            "x": 413,
+            "y": 526
+        },
+        {
+            "type": "Image",
+            "id": "8c70b36e-5c1b-45a2-a79d-e17dc97f22c0",
+            "label": "bush",
+            "components": [],
+            "texture": {
+                "key": "bush"
+            },
+            "x": 112,
+            "y": 525
+        },
+        {
+            "type": "TileSprite",
+            "id": "2a31691f-90b5-4f28-8e41-b6a4d358d7ec",
+            "label": "castleCenter",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "castleCenter"
+            },
+            "x": -161,
+            "y": 359,
+            "scaleX": 6.472581856676625,
+            "scaleY": 6.249982684200267,
+            "width": 70,
+            "height": 70
+        },
+        {
+            "type": "Image",
+            "id": "9201be34-0146-4e69-b411-fc9562baf3ee",
+            "label": "grassHalfMid_1",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "grassHalfMid"
+            },
+            "x": 209,
+            "y": 556
+        },
+        {
+            "type": "TileSprite",
+            "id": "cb699a9c-ea72-43c8-81ba-12daa3702391",
+            "label": "grassHalfMid_2",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "grassHalfMid"
+            },
+            "x": 421,
+            "y": 595,
+            "scaleX": 11.985926286278405,
+            "width": 70,
+            "height": 70
+        },
+        {
+            "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
+            "id": "059de0ce-ee6f-477a-bda1-9bfedeb28595",
+            "label": "coinGold",
+            "components": [],
+            "x": 440,
+            "y": 326
+        },
+        {
+            "type": "Image",
+            "id": "8907e544-8fbe-459a-a6c7-543d6f291ea6",
+            "label": "coinGold_1",
+            "components": [],
+            "texture": {
+                "key": "coinGold"
+            },
+            "x": 661,
+            "y": 311
+        },
+        {
+            "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
+            "id": "f349604b-9643-473a-970c-8db1129130aa",
+            "unlock": [
+                "player"
+            ],
+            "label": "coinGold_2",
+            "components": [],
+            "x": 357,
+            "y": 380
+        },
+        {
+            "type": "Image",
+            "id": "94f5c80e-fa8d-4e94-9522-4b2be5b4dece",
+            "label": "coinGold_3",
+            "components": [],
+            "texture": {
+                "key": "coinGold"
+            },
+            "x": 600,
+            "y": 310
+        },
+        {
+            "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
+            "id": "86ec9892-74a4-4f39-b72a-054a160b0345",
+            "label": "coinGold_4",
+            "components": [],
+            "x": 275,
+            "y": 441
+        },
+        {
+            "type": "Sprite",
+            "id": "e00ca9a8-ef7e-4285-b312-9c126441aee4",
+            "label": "player",
+            "scope": "PUBLIC",
+            "components": [
+                "Physics",
+                "Movement"
+            ],
+            "texture": {
+                "key": "p1_stand"
+            },
+            "x": 63,
+            "y": 387,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "31f765e8-7cdd-46e3-9f89-07e3ed55ae6b",
+            "label": "bridge",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "bridge"
+            },
+            "x": 443,
+            "y": 382
+        },
+        {
+            "type": "Image",
+            "id": "bb42ac22-0c01-488a-a591-90b0d0058f3a",
+            "label": "grassHalfMid",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "grassHalfMid"
+            },
+            "x": 1812,
+            "y": 598,
+            "scaleX": 27.69972252797321,
+            "scaleY": 0.8964360514885276
+        },
+        {
+            "prefabId": "cd33475f-935c-49d1-bef6-e13482381fb9",
+            "id": "342f5597-fed4-4e44-9c23-4418771949da",
+            "label": "bridgeLogs",
+            "scope": "CLASS",
+            "components": [],
+            "x": 681,
+            "y": 384
+        },
+        {
+            "prefabId": "f0a4aee3-1c9f-438b-aade-26a6075b05cd",
+            "id": "80f06cc9-791c-4483-8506-c60682263324",
+            "label": "flyFly1",
+            "scope": "CLASS",
+            "components": [],
+            "x": 767,
+            "y": 306
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType"
+    },
+    "lists": [
+        {
+            "id": "a517d58b-8ef1-4ff8-9598-1208fbde24dd",
+            "label": "items",
+            "objectIds": [
+                "cb699a9c-ea72-43c8-81ba-12daa3702391",
+                "31f765e8-7cdd-46e3-9f89-07e3ed55ae6b",
+                "e2cd550b-2251-4b54-8962-134a1722ee8a",
+                "8d999e0b-9c64-482e-8ffa-8ccfddd2e8ac",
+                "9201be34-0146-4e69-b411-fc9562baf3ee",
+                "ae03073f-b11a-4ffd-b6f9-a22cba5500f4",
+                "2a31691f-90b5-4f28-8e41-b6a4d358d7ec",
+                "bb42ac22-0c01-488a-a591-90b0d0058f3a",
+                "342f5597-fed4-4e44-9c23-4418771949da",
+                "80f06cc9-791c-4483-8506-c60682263324"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "id": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": ""
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "6eaab6cf-282e-483a-8add-d3bd9c8c7420",
+            "label": "sprite",
+            "components": [],
+            "texture": {
+                "key": "coinGold"
+            },
+            "x": 430,
+            "y": 288
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType"
+    },
+    "prefabProperties": [
+        {
+            "name": "player",
+            "label": "Player",
+            "tooltip": "Property 1",
+            "defValue": "",
+            "type": {
+                "id": "texture-config"
+            }
+        }
+    ]
+}

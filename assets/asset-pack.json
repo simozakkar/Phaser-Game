@@ -1,0 +1,246 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/animations/actor-animations.json",
+                "type": "animation",
+                "key": "actor-animations"
+            },
+            {
+                "url": "assets/images/brickWall.png",
+                "type": "image",
+                "key": "brickWall"
+            },
+            {
+                "url": "assets/images/bridge.png",
+                "type": "image",
+                "key": "bridge"
+            },
+            {
+                "url": "assets/images/bridgeLogs.png",
+                "type": "image",
+                "key": "bridgeLogs"
+            },
+            {
+                "url": [
+                    "assets/prefab/bridgePrefab.js"
+                ],
+                "type": "scripts",
+                "key": "bridgePrefab"
+            },
+            {
+                "url": "assets/images/bush.png",
+                "type": "image",
+                "key": "bush"
+            },
+            {
+                "url": "assets/images/cactus.png",
+                "type": "image",
+                "key": "cactus"
+            },
+            {
+                "url": "assets/images/castleCenter.png",
+                "type": "image",
+                "key": "castleCenter"
+            },
+            {
+                "url": "assets/images/cloud1.png",
+                "type": "image",
+                "key": "cloud1"
+            },
+            {
+                "url": "assets/images/cloud2.png",
+                "type": "image",
+                "key": "cloud2"
+            },
+            {
+                "url": "assets/images/cloud3.png",
+                "type": "image",
+                "key": "cloud3"
+            },
+            {
+                "url": [
+                    "assets/sounds/coin.wav"
+                ],
+                "type": "audio",
+                "key": "coin"
+            },
+            {
+                "url": "assets/images/coinGold.png",
+                "type": "image",
+                "key": "coinGold"
+            },
+            {
+                "url": [
+                    "assets/prefab/coinPrefab.js"
+                ],
+                "type": "scripts",
+                "key": "coinPrefab"
+            },
+            {
+                "url": "assets/animations/enimes-animations.json",
+                "type": "animation",
+                "key": "enimes-animations"
+            },
+            {
+                "url": [
+                    "assets/prefab/enimesPrafeb.js"
+                ],
+                "type": "scripts",
+                "key": "enimesPrafeb"
+            },
+            {
+                "url": [
+                    "assets/components/EventComponent.js"
+                ],
+                "type": "scripts",
+                "key": "EventComponent"
+            },
+            {
+                "url": "assets/images/flyDead.png",
+                "type": "image",
+                "key": "flyDead"
+            },
+            {
+                "url": "assets/images/flyFly1.png",
+                "type": "image",
+                "key": "flyFly1"
+            },
+            {
+                "url": "assets/images/flyFly2.png",
+                "type": "image",
+                "key": "flyFly2"
+            },
+            {
+                "url": "assets/images/Grass.png",
+                "type": "image",
+                "key": "Grass"
+            },
+            {
+                "url": "assets/images/grassHalfMid.png",
+                "type": "image",
+                "key": "grassHalfMid"
+            },
+            {
+                "url": [
+                    "assets/sounds/jump.wav"
+                ],
+                "type": "audio",
+                "key": "jump"
+            },
+            {
+                "url": "assets/images/ladder_mid.png",
+                "type": "image",
+                "key": "ladder_mid"
+            },
+            {
+                "url": "assets/images/Left.png",
+                "type": "image",
+                "key": "Left"
+            },
+            {
+                "url": "assets/Level.js",
+                "type": "sceneFile",
+                "key": "Level"
+            },
+            {
+                "url": [
+                    "assets/sounds/life lost sound.wav"
+                ],
+                "type": "audio",
+                "key": "life lost sound"
+            },
+            {
+                "url": [
+                    "assets/components/Movement.js",
+                    "assets/components/Physics.js",
+                    "assets/components/PhysicsBridges.js"
+                ],
+                "type": "scripts",
+                "key": "Movement"
+            },
+            {
+                "url": "assets/images/p1_jump.png",
+                "type": "image",
+                "key": "p1_jump"
+            },
+            {
+                "url": "assets/images/p1_stand.png",
+                "type": "image",
+                "key": "p1_stand"
+            },
+            {
+                "url": "assets/images/p1_walk01.png",
+                "type": "image",
+                "key": "p1_walk01"
+            },
+            {
+                "url": "assets/images/p1_walk02.png",
+                "type": "image",
+                "key": "p1_walk02"
+            },
+            {
+                "url": "assets/images/p1_walk03.png",
+                "type": "image",
+                "key": "p1_walk03"
+            },
+            {
+                "url": "assets/images/p1_walk04.png",
+                "type": "image",
+                "key": "p1_walk04"
+            },
+            {
+                "url": "assets/images/p1_walk05.png",
+                "type": "image",
+                "key": "p1_walk05"
+            },
+            {
+                "url": "assets/images/p1_walk06.png",
+                "type": "image",
+                "key": "p1_walk06"
+            },
+            {
+                "url": "assets/images/p1_walk07.png",
+                "type": "image",
+                "key": "p1_walk07"
+            },
+            {
+                "url": "assets/images/p1_walk08.png",
+                "type": "image",
+                "key": "p1_walk08"
+            },
+            {
+                "url": "assets/images/Right.png",
+                "type": "image",
+                "key": "Right"
+            },
+            {
+                "url": "assets/images/slimeDead.png",
+                "type": "image",
+                "key": "slimeDead"
+            },
+            {
+                "url": "assets/images/slimeWalk1.png",
+                "type": "image",
+                "key": "slimeWalk1"
+            },
+            {
+                "url": "assets/images/slimeWalk2.png",
+                "type": "image",
+                "key": "slimeWalk2"
+            },
+            {
+                "url": "assets/images/tiled_Forest Background.png",
+                "type": "image",
+                "key": "tiled_Forest Background"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}
