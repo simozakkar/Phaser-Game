@@ -11,7 +11,9 @@
             "type": "Sprite",
             "id": "6eaab6cf-282e-483a-8add-d3bd9c8c7420",
             "label": "sprite",
-            "components": [],
+            "components": [
+                "PhysicsBridges"
+            ],
             "texture": {
                 "key": "coinGold"
             },

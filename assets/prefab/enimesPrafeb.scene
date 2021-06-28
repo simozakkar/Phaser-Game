@@ -26,5 +26,17 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType"
-    }
+    },
+    "prefabProperties": [
+        {
+            "name": "player",
+            "label": "Player",
+            "tooltip": "Property 1",
+            "defValue": "this",
+            "type": {
+                "id": "expression",
+                "expressionType": "Phaser.GameObjects.Sprite"
+            }
+        }
+    ]
 }

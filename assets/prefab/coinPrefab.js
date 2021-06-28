@@ -8,14 +8,13 @@ class coinPrefab extends Phaser.GameObjects.Sprite {
 	constructor(scene, x, y, texture, frame) {
 		super(scene, x, y, texture || "coinGold", frame);
 		
+		// this (components)
+		new PhysicsBridges(this);
+		
 		/* START-USER-CTR-CODE */
 		// each time the scene is updated, call the `update` method
         scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
 
-		scene.physics.add.existing(this);
-
-		this.body.setImmovable();
-		this.toucheFirstTime = true
 		this.coinSound = this.scene.sound.add('coin')
 
 		this.idleTween = this.scene.tweens.add({
@@ -37,8 +36,7 @@ class coinPrefab extends Phaser.GameObjects.Sprite {
 	update(){
 		if(!this.body.touching["none"]){
 			this.getCoin()
-		}	
-		console.log('update')
+		}
 	}
 	
 	getCoin() {
@@ -46,10 +44,6 @@ class coinPrefab extends Phaser.GameObjects.Sprite {
 		this.coinSound.play()
 		this.taken()
 	}
-
- 	destroy() {
-        this.scene.events.off(Phaser.Scenes.Events.UPDATE, this.update, this);
-    }
 
 	taken() {
 		
@@ -68,6 +62,10 @@ class coinPrefab extends Phaser.GameObjects.Sprite {
 			ease: Phaser.Math.Easing.Linear
 		});
 	}
+
+ 	destroy() {
+        this.scene.events.off(Phaser.Scenes.Events.UPDATE, this.update, this);
+    }
 	/* END-USER-CODE */
 }
 

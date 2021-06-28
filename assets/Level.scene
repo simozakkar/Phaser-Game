@@ -145,23 +145,6 @@
             "y": 441
         },
         {
-            "type": "Sprite",
-            "id": "e00ca9a8-ef7e-4285-b312-9c126441aee4",
-            "label": "player",
-            "scope": "CLASS",
-            "components": [
-                "Physics",
-                "Movement"
-            ],
-            "texture": {
-                "key": "p1_stand"
-            },
-            "x": 63,
-            "y": 387,
-            "originX": 0,
-            "originY": 0
-        },
-        {
             "type": "Image",
             "id": "31f765e8-7cdd-46e3-9f89-07e3ed55ae6b",
             "label": "bridge",
@@ -202,6 +185,30 @@
             "y": 384
         },
         {
+            "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
+            "id": "e0c6e26a-7e03-4a4b-a186-2b30fd9f39cc",
+            "label": "coinGold",
+            "components": [],
+            "x": 353,
+            "y": 380
+        },
+        {
+            "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
+            "id": "3f3c26c0-7412-48b1-aafb-56e5069dbe26",
+            "label": "coinGold_1",
+            "components": [],
+            "x": 446,
+            "y": 318
+        },
+        {
+            "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
+            "id": "78650a42-3a32-4680-934e-8058003d35f3",
+            "label": "coinGold_2",
+            "components": [],
+            "x": 679,
+            "y": 313
+        },
+        {
             "prefabId": "f0a4aee3-1c9f-438b-aade-26a6075b05cd",
             "id": "80f06cc9-791c-4483-8506-c60682263324",
             "label": "flyFly1",
@@ -211,13 +218,21 @@
             "y": 306
         },
         {
-            "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
-            "id": "e0c6e26a-7e03-4a4b-a186-2b30fd9f39cc",
-            "label": "coinGold",
-            "scope": "PUBLIC",
-            "components": [],
-            "x": 353,
-            "y": 380
+            "type": "Sprite",
+            "id": "e00ca9a8-ef7e-4285-b312-9c126441aee4",
+            "label": "player",
+            "scope": "CLASS",
+            "components": [
+                "Physics",
+                "Movement"
+            ],
+            "texture": {
+                "key": "p1_stand"
+            },
+            "x": 63,
+            "y": 387,
+            "originX": 0,
+            "originY": 0
         }
     ],
     "plainObjects": [],
@@ -248,7 +263,9 @@
             "label": "coins",
             "objectIds": [
                 "86ec9892-74a4-4f39-b72a-054a160b0345",
-                "e0c6e26a-7e03-4a4b-a186-2b30fd9f39cc"
+                "e0c6e26a-7e03-4a4b-a186-2b30fd9f39cc",
+                "3f3c26c0-7412-48b1-aafb-56e5069dbe26",
+                "78650a42-3a32-4680-934e-8058003d35f3"
             ]
         }
     ]
