@@ -50,7 +50,7 @@ class Movement extends EventComponent {
 
 		if (this.cursors.up.isDown && body.onFloor())
 		{
-				body.velocity.y = -1700;
+				body.velocity.y = -1400;
 				this.player.play('Jump', true)
 				this.jumpSound.play()
 		}

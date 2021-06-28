@@ -3,6 +3,7 @@
     "sceneType": "SCENE",
     "settings": {
         "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
         "sceneKey": "Level"
     },
     "displayList": [
@@ -211,9 +212,15 @@
         {
             "prefabId": "f0a4aee3-1c9f-438b-aade-26a6075b05cd",
             "id": "80f06cc9-791c-4483-8506-c60682263324",
+            "unlock": [
+                "texture"
+            ],
             "label": "flyFly1",
             "scope": "CLASS",
             "components": [],
+            "texture": {
+                "key": "flyFly1"
+            },
             "x": 767,
             "y": 306
         },
@@ -233,6 +240,21 @@
             "y": 387,
             "originX": 0,
             "originY": 0
+        },
+        {
+            "prefabId": "f0a4aee3-1c9f-438b-aade-26a6075b05cd",
+            "id": "ae036fc4-eb49-47c5-acdb-5ada14b03370",
+            "unlock": [
+                "texture"
+            ],
+            "label": "slimeWalk1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "slimeWalk2"
+            },
+            "x": 710,
+            "y": 551
         }
     ],
     "plainObjects": [],
@@ -255,7 +277,8 @@
                 "2a31691f-90b5-4f28-8e41-b6a4d358d7ec",
                 "bb42ac22-0c01-488a-a591-90b0d0058f3a",
                 "342f5597-fed4-4e44-9c23-4418771949da",
-                "80f06cc9-791c-4483-8506-c60682263324"
+                "80f06cc9-791c-4483-8506-c60682263324",
+                "ae036fc4-eb49-47c5-acdb-5ada14b03370"
             ]
         },
         {

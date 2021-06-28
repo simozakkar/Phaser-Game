@@ -6,7 +6,7 @@
 class enimesPrafeb extends Phaser.GameObjects.Sprite {
 	
 	constructor(scene, x, y, texture, frame) {
-		super(scene, x, y, texture || "flyFly1", frame);
+		super(scene, x, y, texture || "__DEFAULT", frame);
 		
 		// this (components)
 		new PhysicsBridges(this);
@@ -18,13 +18,16 @@ class enimesPrafeb extends Phaser.GameObjects.Sprite {
 		this.maxX = 800;
 		this.minX = 400;
 		this.step = 3;
-		this.play('flyFly');
+		this.nameTexture = texture.substring(0, 3);
+		this.play(this.nameTexture+'Walk');
 		this.jumpSound = this.scene.sound.add('jump')
+		this.lifLostSound = this.scene.sound.add('life lost sound')
+
+		/** @type {Phaser.GameObjects.Sprite} */
+		this.player
+
 		/* END-USER-CTR-CODE */
 	}
-	
-	/** @type {Phaser.GameObjects.Sprite} */
-	player = this;
 	
 	/* START-USER-CODE */
 
@@ -41,7 +44,14 @@ class enimesPrafeb extends Phaser.GameObjects.Sprite {
 
 		if(this.body.touching["up"] || this.body.touching["down"]) {
 			this.fly_dead()
+
+			if(this.body.touching["up"]) this.player.body.velocity.y = -1400
+
 		}else if(this.body.touching["left"] || this.body.touching["right"]) {
+
+			this.player.setPosition(63,387)
+			this.lifLostSound.play()
+			
 		}
 	}
 
@@ -51,17 +61,18 @@ class enimesPrafeb extends Phaser.GameObjects.Sprite {
 
 	fly_dead(){
 		this.destroy()
-		this.play('flyDead')
+		this.play(this.nameTexture+'Dead')
 		this.body.setEnable(false);
+		//this.player.body.velocity.y = -1700
 
 		this.scene.add.tween({
 			targets: this,
-			duration: 500,
+			duration: 800,
 			scaleX: 0.6,
 			scaleY: 0.6,
 			angle: 360,
 			alpha: 0,
-			y: "+=50",
+			y: "+=450",
 			ease: Phaser.Math.Easing.Linear
 		});
 	}
