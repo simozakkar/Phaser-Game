@@ -41,7 +41,6 @@ class Movement extends EventComponent {
 	}
 	
 	update() {
-		console.log("HI")
 		const speed = 400
 		/** @type {Phaser.Physics.Arcade.Sprite} */
 		const body = this.player.body

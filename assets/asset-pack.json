@@ -29,6 +29,13 @@
                 "key": "bridgePrefab"
             },
             {
+                "url": [
+                    "assets/prefab/bridgeVerticalPrefab.js"
+                ],
+                "type": "scripts",
+                "key": "bridgeVerticalPrefab"
+            },
+            {
                 "url": "assets/images/bush.png",
                 "type": "image",
                 "key": "bush"
@@ -39,24 +46,24 @@
                 "key": "cactus"
             },
             {
+                "url": "assets/images/Cactus (1).png",
+                "type": "image",
+                "key": "Cactus (1)"
+            },
+            {
+                "url": "assets/images/Cactus (2).png",
+                "type": "image",
+                "key": "Cactus (2)"
+            },
+            {
+                "url": "assets/images/Cactus (3).png",
+                "type": "image",
+                "key": "Cactus (3)"
+            },
+            {
                 "url": "assets/images/castleCenter.png",
                 "type": "image",
                 "key": "castleCenter"
-            },
-            {
-                "url": "assets/images/cloud1.png",
-                "type": "image",
-                "key": "cloud1"
-            },
-            {
-                "url": "assets/images/cloud2.png",
-                "type": "image",
-                "key": "cloud2"
-            },
-            {
-                "url": "assets/images/cloud3.png",
-                "type": "image",
-                "key": "cloud3"
             },
             {
                 "url": [
@@ -91,7 +98,10 @@
             },
             {
                 "url": [
-                    "assets/components/EventComponent.js"
+                    "assets/components/EventComponent.js",
+                    "assets/components/Movement.js",
+                    "assets/components/Physics.js",
+                    "assets/components/PhysicsBridges.js"
                 ],
                 "type": "scripts",
                 "key": "EventComponent"
@@ -117,6 +127,16 @@
                 "key": "Grass"
             },
             {
+                "url": "assets/images/Grass (1).png",
+                "type": "image",
+                "key": "Grass (1)"
+            },
+            {
+                "url": "assets/images/Grass (2).png",
+                "type": "image",
+                "key": "Grass (2)"
+            },
+            {
                 "url": "assets/images/grassHalfMid.png",
                 "type": "image",
                 "key": "grassHalfMid"
@@ -134,11 +154,6 @@
                 "key": "ladder_mid"
             },
             {
-                "url": "assets/images/Left.png",
-                "type": "image",
-                "key": "Left"
-            },
-            {
                 "url": "assets/Level.js",
                 "type": "sceneFile",
                 "key": "Level"
@@ -151,13 +166,9 @@
                 "key": "life lost sound"
             },
             {
-                "url": [
-                    "assets/components/Movement.js",
-                    "assets/components/Physics.js",
-                    "assets/components/PhysicsBridges.js"
-                ],
-                "type": "scripts",
-                "key": "Movement"
+                "url": "assets/MiramarLevel.js",
+                "type": "sceneFile",
+                "key": "MiramarLevel"
             },
             {
                 "url": "assets/images/p1_jump.png",
@@ -210,9 +221,14 @@
                 "key": "p1_walk08"
             },
             {
-                "url": "assets/images/Right.png",
+                "url": "assets/images/SignArrow.png",
                 "type": "image",
-                "key": "Right"
+                "key": "SignArrow"
+            },
+            {
+                "url": "assets/images/Skeleton.png",
+                "type": "image",
+                "key": "Skeleton"
             },
             {
                 "url": "assets/images/slimeDead.png",
@@ -230,9 +246,21 @@
                 "key": "slimeWalk2"
             },
             {
+                "url": [
+                    "assets/sounds/smb_stage_clear.wav"
+                ],
+                "type": "audio",
+                "key": "smb_stage_clear"
+            },
+            {
                 "url": "assets/images/tiled_Forest Background.png",
                 "type": "image",
                 "key": "tiled_Forest Background"
+            },
+            {
+                "url": "assets/images/Tree.png",
+                "type": "image",
+                "key": "Tree"
             }
         ]
     },

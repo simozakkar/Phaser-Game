@@ -3,7 +3,7 @@
 
 /* START OF COMPILED CODE */
 
-class bridgePrefab extends Phaser.GameObjects.Sprite {
+class bridgeVerticalPrefab extends Phaser.GameObjects.Sprite {
 	
 	constructor(scene, x, y, texture, frame) {
 		super(scene, x, y, texture || "__DEFAULT", frame);
@@ -17,7 +17,7 @@ class bridgePrefab extends Phaser.GameObjects.Sprite {
 		this.player = this;
 		// each time the scene is updated, call the `update` method
         scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
-		this.initX = x;
+		this.initY = y;
 		this.step = 5;
 		/* END-USER-CTR-CODE */
 	}
@@ -28,17 +28,17 @@ class bridgePrefab extends Phaser.GameObjects.Sprite {
 	/* START-USER-CODE */
 
 	update(){
-		if(this.x > this.initX + this.dist){
+		if(this.y > this.initY + this.dist){
 			this.step = -Math.abs(this.step);
 		}
-		if(this.x < this.initX){
+		if(this.y < this.initY){
 			this.step = Math.abs(this.step);
 		}
-		this.x += this.step;
+		this.y += this.step;
 
 
 		if(this.body.touching["up"]) {
-			this.player.body.x += this.step
+			this.player.body.y += this.step
 		} 
 
 	}

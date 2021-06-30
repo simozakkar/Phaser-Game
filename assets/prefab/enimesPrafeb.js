@@ -14,9 +14,8 @@ class enimesPrafeb extends Phaser.GameObjects.Sprite {
 		/* START-USER-CTR-CODE */
 		// each time the scene is updated, call the `update` method
         scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
-	
-		this.maxX = 800;
-		this.minX = 400;
+
+		this.initX = x;
 		this.step = 3;
 		this.nameTexture = texture.substring(0, 3);
 		this.play(this.nameTexture+'Walk');
@@ -29,14 +28,17 @@ class enimesPrafeb extends Phaser.GameObjects.Sprite {
 		/* END-USER-CTR-CODE */
 	}
 	
+	/** @type {number} */
+	dist = 250;
+	
 	/* START-USER-CODE */
 
 	update(){
-		if(this.x > this.maxX){
+		if(this.x >= this.initX + this.dist){
 			this.step = -Math.abs(this.step);
 			this.flipX = false;
 		}
-		if(this.x < this.minX){
+		if(this.x <= this.initX){
 			this.step = Math.abs(this.step);
 			this.flipX = true;
 		}
@@ -44,10 +46,10 @@ class enimesPrafeb extends Phaser.GameObjects.Sprite {
 
 		if(this.body.touching["up"] || this.body.touching["down"]) {
 			this.fly_dead()
-
+			sessionStorage.setItem("scoreValue", parseInt(sessionStorage.getItem("scoreValue"))+50)
 			if(this.body.touching["up"]) this.player.body.velocity.y = -1400
 
-		}else if(this.body.touching["left"] || this.body.touching["right"]) {
+		}else if(this.body.touching["left"] || this.body.touching["right"] || Phaser.Geom.Rectangle.Intersection(this.player.getBounds(), this.getBounds()).x) {
 
 			this.player.setPosition(63,387)
 			this.lifLostSound.play()

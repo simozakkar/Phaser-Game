@@ -1,0 +1,28 @@
+{
+    "id": "1a2a30e5-8596-41b0-bf6c-ff995431e487",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "MiramarLevel"
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "024ff62a-0fd7-4439-a189-6f447ba8efa7",
+            "label": "coinGold",
+            "components": [],
+            "texture": {
+                "key": "coinGold"
+            },
+            "x": 495,
+            "y": 75
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType"
+    }
+}

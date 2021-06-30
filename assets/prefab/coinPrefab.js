@@ -12,6 +12,8 @@ class coinPrefab extends Phaser.GameObjects.Sprite {
 		new PhysicsBridges(this);
 		
 		/* START-USER-CTR-CODE */
+		/** @type {Phaser.GameObjects.Sprite} */
+		this.player
 		// each time the scene is updated, call the `update` method
         scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
 
@@ -34,8 +36,11 @@ class coinPrefab extends Phaser.GameObjects.Sprite {
 	/* START-USER-CODE */
 
 	update(){
-		if(!this.body.touching["none"]){
+		if(Phaser.Geom.Rectangle.Intersection(this.player.getBounds(), this.getBounds()).x){
 			this.getCoin()
+
+			// add score
+			sessionStorage.setItem("scoreValue", parseInt(sessionStorage.getItem("scoreValue"))+25)
 		}
 	}
 	
@@ -46,7 +51,7 @@ class coinPrefab extends Phaser.GameObjects.Sprite {
 	}
 
 	taken() {
-		
+	
 		this.body.setEnable(false);
 
 		this.idleTween.remove();

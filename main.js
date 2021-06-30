@@ -30,7 +30,10 @@ class Boot extends Phaser.Scene {
 	}
 
 	create() {
-		
+		if(sessionStorage.getItem("scoreValue") == null){
+			sessionStorage.setItem("scoreValue", "0");
+		}
+			
 		this.scene.start("Level");
 	}
 

@@ -1,5 +1,5 @@
 {
-    "id": "fcdb3599-47a5-40df-9b9b-c1a33cb32947",
+    "id": "7e62df48-79cd-45a7-8f64-6b076688b07d",
     "sceneType": "PREFAB",
     "settings": {
         "preloadMethodName": "",
@@ -9,14 +9,14 @@
     "displayList": [
         {
             "type": "Sprite",
-            "id": "c59c5602-f4a6-405a-aa2a-cf37178d860d",
+            "id": "f60fa828-d09a-4f13-aede-ee94513a6d50",
             "label": "sprite",
             "components": [
                 "PhysicsBridges"
             ],
             "texture": {},
-            "x": 671,
-            "y": 192
+            "x": 407,
+            "y": 552
         }
     ],
     "plainObjects": [],
