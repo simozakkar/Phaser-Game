@@ -9,28 +9,6 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "06fb9407-7cdb-49f5-9e63-80cf247004cd",
-            "label": "grass__2_",
-            "components": [],
-            "texture": {
-                "key": "Grass (2)"
-            },
-            "x": 1861,
-            "y": 578
-        },
-        {
-            "type": "Image",
-            "id": "e088b1a0-4380-4c5c-ba1e-225baa61a7a7",
-            "label": "grass__1_",
-            "components": [],
-            "texture": {
-                "key": "Grass (1)"
-            },
-            "x": 1940,
-            "y": 574
-        },
-        {
-            "type": "Image",
             "id": "e8b88e38-0570-490a-a191-95f660543b31",
             "label": "tiled_Forest_Background",
             "scope": "CLASS",
@@ -44,6 +22,47 @@
             "scaleY": 0.6524423588988446,
             "originX": 0,
             "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "06fb9407-7cdb-49f5-9e63-80cf247004cd",
+            "label": "grass__2_",
+            "components": [],
+            "texture": {
+                "key": "Grass (2)"
+            },
+            "x": 1861,
+            "y": 574
+        },
+        {
+            "type": "Image",
+            "id": "e088b1a0-4380-4c5c-ba1e-225baa61a7a7",
+            "label": "grass__1_",
+            "components": [],
+            "texture": {
+                "key": "Grass (2)"
+            },
+            "x": 1940,
+            "y": 574
+        },
+        {
+            "type": "TileSprite",
+            "id": "888e200f-aea7-430e-8cdb-19f855c45a2a",
+            "label": "tilesprite",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "grassHalfMid"
+            },
+            "x": 1976,
+            "y": 558,
+            "scaleY": 1.0041944448172737,
+            "originX": 0.016576718996191175,
+            "originY": 0.016576718996192952,
+            "width": 800,
+            "height": 64
         },
         {
             "type": "Image",
@@ -367,33 +386,6 @@
             "y": 379
         },
         {
-            "type": "Text",
-            "id": "4e465e46-6c52-4f4d-bd92-30064b065e0c",
-            "label": "score",
-            "scope": "CLASS",
-            "components": [],
-            "x": 64,
-            "y": 29,
-            "originX": 0,
-            "originY": 0,
-            "text": "0",
-            "fontSize": "32px",
-            "fontStyle": "bold",
-            "color": "#010101ff"
-        },
-        {
-            "type": "Image",
-            "id": "080a0ea6-fa6b-4676-aa64-bcc33cb66913",
-            "label": "coinScore",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "coinGold"
-            },
-            "x": 29,
-            "y": 47
-        },
-        {
             "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
             "id": "c4918994-2bb0-418d-b5f4-0ad7f9ae2e51",
             "unlock": [
@@ -564,21 +556,6 @@
             "y": 452
         },
         {
-            "type": "Image",
-            "id": "77b218a4-dd6a-4854-8808-25c175712a5c",
-            "label": "grassHalfMid_3",
-            "components": [
-                "PhysicsBridges"
-            ],
-            "texture": {
-                "key": "grassHalfMid"
-            },
-            "x": 2305,
-            "y": 592,
-            "scaleX": 9.813318706969643,
-            "scaleY": 0.917662037774685
-        },
-        {
             "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
             "id": "9164aaf1-11c1-43d6-a60f-f7f99b787f88",
             "label": "coinGold_8",
@@ -710,7 +687,6 @@
             "label": "player",
             "scope": "CLASS",
             "components": [
-                "Physics",
                 "Movement"
             ],
             "texture": {
@@ -720,6 +696,15 @@
             "y": 387,
             "originX": 0,
             "originY": 0
+        },
+        {
+            "prefabId": "1f3193df-86f5-45c7-b2e7-67588ce70deb",
+            "id": "855913a1-8796-4eb9-b714-934b8cbe2b8f",
+            "label": "container",
+            "scope": "CLASS",
+            "components": [],
+            "x": 387,
+            "y": 116
         }
     ],
     "plainObjects": [],
@@ -756,10 +741,10 @@
                 "a992dba5-b78f-43bc-81de-e7fffe9c6b34",
                 "fb5eb4d7-9eb9-4efa-ab9c-b6e932867872",
                 "0c6f711e-5f07-4d74-b673-9b294d1ae211",
-                "77b218a4-dd6a-4854-8808-25c175712a5c",
                 "aaca6440-b7e0-4784-9681-7b2e619e09ff",
                 "94050ade-2880-484f-a878-1648c28e8e2b",
-                "581aa6a5-419a-4530-90f5-adf143a694ad"
+                "581aa6a5-419a-4530-90f5-adf143a694ad",
+                "888e200f-aea7-430e-8cdb-19f855c45a2a"
             ]
         },
         {

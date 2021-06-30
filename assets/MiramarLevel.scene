@@ -17,6 +17,478 @@
             },
             "x": 495,
             "y": 75
+        },
+        {
+            "type": "Image",
+            "id": "b1cbfe6a-22ae-44f0-a6e3-ee182833512a",
+            "label": "bG",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "BG"
+            },
+            "scaleX": 0.6229967391704219,
+            "scaleY": 0.6400737345025433,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "ddf53895-3a5e-446a-be5c-d4d87bedc673",
+            "label": "player",
+            "scope": "CLASS",
+            "components": [
+                "Movement"
+            ],
+            "texture": {
+                "key": "p1_stand"
+            },
+            "x": 104,
+            "y": 450
+        },
+        {
+            "type": "Image",
+            "id": "0184ee33-84bc-4a0c-9f5b-59cf114f6d59",
+            "label": "stoneBlock",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "StoneBlock"
+            },
+            "x": -215,
+            "y": 431,
+            "scaleX": 5.332885342520114,
+            "scaleY": 4.794804553279632
+        },
+        {
+            "type": "TileSprite",
+            "id": "21bd147e-879f-461a-8663-4b442516a34d",
+            "label": "tileGround",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "15"
+            },
+            "x": 48.02935894185088,
+            "y": 555.2486410120467,
+            "scaleY": 0.6102646855589325,
+            "originX": 0.00022936673321000134,
+            "originY": 0.02864873105847427,
+            "width": 3000,
+            "height": 93
+        },
+        {
+            "type": "Image",
+            "id": "504a1a6f-d464-403c-9a15-07c986edc367",
+            "label": "crate_5_1_1_1",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "Crate"
+            },
+            "x": 663,
+            "y": 501
+        },
+        {
+            "prefabId": "7e62df48-79cd-45a7-8f64-6b076688b07d",
+            "id": "6fc1ad48-d2f1-45e5-97e5-ea2b675dc26f",
+            "unlock": [
+                "texture"
+            ],
+            "label": "bridge",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bridge"
+            },
+            "x": 370,
+            "y": 278
+        },
+        {
+            "prefabId": "f0a4aee3-1c9f-438b-aade-26a6075b05cd",
+            "id": "f0ba5b82-decd-4b88-a989-3e4cb53e7d0d",
+            "unlock": [
+                "texture"
+            ],
+            "label": "flyFly1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "flyFly1"
+            },
+            "x": 465,
+            "y": 267
+        },
+        {
+            "prefabId": "1f3193df-86f5-45c7-b2e7-67588ce70deb",
+            "id": "1503acad-b1c7-4777-a039-df95ae5854d9",
+            "label": "container",
+            "scope": "CLASS",
+            "components": [],
+            "x": 416,
+            "y": 133
+        },
+        {
+            "prefabId": "f0a4aee3-1c9f-438b-aade-26a6075b05cd",
+            "id": "6203cae3-2d1a-46a3-b216-c8888c0951fc",
+            "unlock": [
+                "texture"
+            ],
+            "label": "slimeWalk2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "slimeWalk2"
+            },
+            "x": 833,
+            "y": 410
+        },
+        {
+            "prefabId": "f0a4aee3-1c9f-438b-aade-26a6075b05cd",
+            "id": "e16a8dcd-06b0-4996-b405-2b4300ca2b06",
+            "unlock": [
+                "texture"
+            ],
+            "label": "slimeWalk2_1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "slimeWalk2"
+            },
+            "x": 1240,
+            "y": 542
+        },
+        {
+            "prefabId": "f0a4aee3-1c9f-438b-aade-26a6075b05cd",
+            "id": "a727fd1d-2f38-4b7d-9e06-f00a9d1c00be",
+            "unlock": [
+                "texture"
+            ],
+            "label": "slimeWalk2_2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "slimeWalk2"
+            },
+            "x": 2065,
+            "y": 544
+        },
+        {
+            "type": "Image",
+            "id": "f50ed371-d04d-42ea-bf84-bce6aac611ff",
+            "label": "skeleton",
+            "components": [],
+            "texture": {
+                "key": "Skeleton"
+            },
+            "x": 937,
+            "y": 530
+        },
+        {
+            "type": "Image",
+            "id": "2fafadca-eece-4220-b854-ff65a0267108",
+            "label": "grass__2_",
+            "components": [],
+            "texture": {
+                "key": "Grass (2)"
+            },
+            "x": 1558,
+            "y": 530
+        },
+        {
+            "type": "Image",
+            "id": "7914fb50-ecd1-4e40-94ee-13849b349759",
+            "label": "cactus__3_",
+            "components": [],
+            "texture": {
+                "key": "Cactus (3)"
+            },
+            "x": 2909,
+            "y": 514
+        },
+        {
+            "type": "Image",
+            "id": "07ea2f99-0a96-4987-a1fd-0732be5f445d",
+            "label": "cactus__1_",
+            "components": [],
+            "texture": {
+                "key": "Cactus (1)"
+            },
+            "x": 1034,
+            "y": 520
+        },
+        {
+            "type": "Image",
+            "id": "938ca6f5-e3d6-4e8d-8c71-5315df5677d0",
+            "label": "ground2",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "2"
+            },
+            "x": 779,
+            "y": 488
+        },
+        {
+            "type": "Image",
+            "id": "6a9e7bf4-61bb-4095-b6b2-af22f9020add",
+            "label": "brickWall",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "brickWall"
+            },
+            "x": 950,
+            "y": 458
+        },
+        {
+            "type": "Image",
+            "id": "5e1afce3-bd05-4c8a-bad0-06dfa14aac6f",
+            "label": "tree",
+            "components": [],
+            "texture": {
+                "key": "Tree"
+            },
+            "x": 1487,
+            "y": 432
+        },
+        {
+            "type": "Image",
+            "id": "7ff7c8e0-0563-4c7a-a7d7-0d4b5645fcff",
+            "label": "signArrow",
+            "components": [],
+            "texture": {
+                "key": "SignArrow"
+            },
+            "x": 2718,
+            "y": 517
+        },
+        {
+            "type": "Image",
+            "id": "1f897809-160e-4c87-afac-07682abad1bd",
+            "label": "crate_5",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "Crate"
+            },
+            "x": 459,
+            "y": 400
+        },
+        {
+            "type": "Image",
+            "id": "9373fc29-6b18-4d47-acff-0b623bfcaeed",
+            "label": "cactus__2_",
+            "components": [],
+            "texture": {
+                "key": "Cactus (2)"
+            },
+            "x": 717,
+            "y": 534
+        },
+        {
+            "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
+            "id": "6c7bf1ae-4a9c-4a6c-bb92-1598cec94645",
+            "label": "coinGold_3",
+            "scope": "CLASS",
+            "components": [],
+            "x": 639,
+            "y": 284
+        },
+        {
+            "type": "Image",
+            "id": "5aa85300-47de-44cc-9753-20e8b6c1c7d4",
+            "label": "brickWall_1",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "brickWall"
+            },
+            "x": 880,
+            "y": 458
+        },
+        {
+            "type": "Image",
+            "id": "f79040b4-3abd-454f-bd8c-07319650f447",
+            "label": "ground2_1",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "2"
+            },
+            "x": 1124,
+            "y": 489
+        },
+        {
+            "type": "Image",
+            "id": "c7957ecb-d61b-4030-b5ea-620b071c1ed8",
+            "label": "bridgeLogs",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "bridgeLogs"
+            },
+            "x": 1023,
+            "y": 434
+        },
+        {
+            "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
+            "id": "3bf26124-d828-4d6f-b3eb-c307c65e856d",
+            "label": "coinGold_4",
+            "scope": "CLASS",
+            "components": [],
+            "x": 2234,
+            "y": 491
+        },
+        {
+            "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
+            "id": "4f45ae5a-5b97-4379-9d53-0441877a6153",
+            "label": "coinGold_5",
+            "scope": "CLASS",
+            "components": [],
+            "x": 978,
+            "y": 327
+        },
+        {
+            "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
+            "id": "1bdff205-ee12-4dbe-975f-ea406a8f588e",
+            "label": "coinGold_6",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1076,
+            "y": 360
+        },
+        {
+            "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
+            "id": "6a1e62df-c19e-4e47-a0db-2af9b24bd2d4",
+            "label": "coinGold_7",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1984,
+            "y": 492
+        },
+        {
+            "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
+            "id": "2c30f96b-e79c-4e45-94c3-70fe94d56ccb",
+            "label": "coinGold_8",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1737,
+            "y": 488
+        },
+        {
+            "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
+            "id": "18adf647-385e-4926-b5cd-5dd6f4ec30eb",
+            "label": "coinGold_9",
+            "scope": "CLASS",
+            "components": [],
+            "x": 882,
+            "y": 363
+        },
+        {
+            "type": "Image",
+            "id": "fb139d62-8b0b-488f-af94-8a487b23c7f4",
+            "label": "bridge_1",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "bridge"
+            },
+            "x": 1225,
+            "y": 503
+        },
+        {
+            "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
+            "id": "3c0eef29-f654-4a5d-b21f-539cafcab743",
+            "label": "coinGold_3_1",
+            "scope": "CLASS",
+            "components": [],
+            "x": 466,
+            "y": 284
+        },
+        {
+            "prefabId": "56b4a9ce-e4b5-4aa6-b989-f9e2352e2977",
+            "id": "636c26e2-3cbc-4e50-a1b9-9d46a368e5ee",
+            "label": "coinGold_3_1_1",
+            "scope": "CLASS",
+            "components": [],
+            "x": 552,
+            "y": 286
+        },
+        {
+            "type": "Image",
+            "id": "63b7638d-6080-4a3c-8338-79a876cca199",
+            "label": "crate_5_1",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "Crate"
+            },
+            "x": 459,
+            "y": 501
+        },
+        {
+            "type": "Image",
+            "id": "6b9d42a6-f567-401c-95d7-b1b9a53d2a85",
+            "label": "crate_5_1_1",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "Crate"
+            },
+            "x": 561,
+            "y": 501
+        },
+        {
+            "type": "Image",
+            "id": "c270f2c9-0eae-41d8-8df5-cc8c46910169",
+            "label": "crate_5_1_1_2",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "Crate"
+            },
+            "x": 561,
+            "y": 400
+        },
+        {
+            "type": "Image",
+            "id": "d7b32364-f94e-4275-88ce-b2fa2dbf7b87",
+            "label": "crate_5_1_1_3",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBridges"
+            ],
+            "texture": {
+                "key": "Crate"
+            },
+            "x": 663,
+            "y": 399
         }
     ],
     "plainObjects": [],
@@ -24,5 +496,64 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType"
-    }
+    },
+    "lists": [
+        {
+            "id": "06c1557d-8d6e-4cb0-8e73-99e99ffe6cfc",
+            "label": "items",
+            "objectIds": [
+                "21bd147e-879f-461a-8663-4b442516a34d",
+                "f79040b4-3abd-454f-bd8c-07319650f447",
+                "fb139d62-8b0b-488f-af94-8a487b23c7f4",
+                "c7957ecb-d61b-4030-b5ea-620b071c1ed8",
+                "6a9e7bf4-61bb-4095-b6b2-af22f9020add",
+                "5aa85300-47de-44cc-9753-20e8b6c1c7d4",
+                "938ca6f5-e3d6-4e8d-8c71-5315df5677d0",
+                "1f897809-160e-4c87-afac-07682abad1bd",
+                "63b7638d-6080-4a3c-8338-79a876cca199",
+                "504a1a6f-d464-403c-9a15-07c986edc367",
+                "6b9d42a6-f567-401c-95d7-b1b9a53d2a85",
+                "c270f2c9-0eae-41d8-8df5-cc8c46910169",
+                "d7b32364-f94e-4275-88ce-b2fa2dbf7b87",
+                "6fc1ad48-d2f1-45e5-97e5-ea2b675dc26f",
+                "f0ba5b82-decd-4b88-a989-3e4cb53e7d0d",
+                "6203cae3-2d1a-46a3-b216-c8888c0951fc",
+                "e16a8dcd-06b0-4996-b405-2b4300ca2b06",
+                "a727fd1d-2f38-4b7d-9e06-f00a9d1c00be",
+                "0184ee33-84bc-4a0c-9f5b-59cf114f6d59"
+            ]
+        },
+        {
+            "id": "faabac2c-7dff-48ac-942b-f88088b89f9a",
+            "label": "coins",
+            "objectIds": [
+                "3bf26124-d828-4d6f-b3eb-c307c65e856d",
+                "2c30f96b-e79c-4e45-94c3-70fe94d56ccb",
+                "6a1e62df-c19e-4e47-a0db-2af9b24bd2d4",
+                "1bdff205-ee12-4dbe-975f-ea406a8f588e",
+                "4f45ae5a-5b97-4379-9d53-0441877a6153",
+                "18adf647-385e-4926-b5cd-5dd6f4ec30eb",
+                "6c7bf1ae-4a9c-4a6c-bb92-1598cec94645",
+                "3c0eef29-f654-4a5d-b21f-539cafcab743",
+                "636c26e2-3cbc-4e50-a1b9-9d46a368e5ee"
+            ]
+        },
+        {
+            "id": "211c4f60-5d58-43df-a6c1-3ab918ddb92f",
+            "label": "bridges",
+            "objectIds": [
+                "6fc1ad48-d2f1-45e5-97e5-ea2b675dc26f"
+            ]
+        },
+        {
+            "id": "11b52d30-d63e-4887-a57c-7364b89bd905",
+            "label": "enimes",
+            "objectIds": [
+                "f0ba5b82-decd-4b88-a989-3e4cb53e7d0d",
+                "a727fd1d-2f38-4b7d-9e06-f00a9d1c00be",
+                "6203cae3-2d1a-46a3-b216-c8888c0951fc",
+                "e16a8dcd-06b0-4996-b405-2b4300ca2b06"
+            ]
+        }
+    ]
 }

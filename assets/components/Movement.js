@@ -13,6 +13,14 @@ class Movement extends EventComponent {
 		
 		/* START-USER-CTR-CODE */
 		const scene = this.gameObject.scene;
+		
+		scene.physics.add.existing(this.gameObject);
+
+		/** @type {Phaser.Physics.Arcade.Body} */
+		const body = this.gameObject.body;
+		body.setGravityY(9000);
+
+		
 
 		this.player = this.gameObject;
 		// Get the Cursor Keys

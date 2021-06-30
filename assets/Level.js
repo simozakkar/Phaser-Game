@@ -15,17 +15,22 @@ class Level extends Phaser.Scene {
 	
 	editorCreate() {
 		
-		// grass__2_
-		this.add.image(1861, 578, "Grass (2)");
-		
-		// grass__1_
-		this.add.image(1940, 574, "Grass (1)");
-		
 		// tiled_Forest_Background
 		const tiled_Forest_Background = this.add.image(1, 2, "tiled_Forest Background");
 		tiled_Forest_Background.scaleX = 0.7881921681790253;
 		tiled_Forest_Background.scaleY = 0.6524423588988446;
 		tiled_Forest_Background.setOrigin(0, 0);
+		
+		// grass__2_
+		this.add.image(1861, 574, "Grass (2)");
+		
+		// grass__1_
+		this.add.image(1940, 574, "Grass (2)");
+		
+		// tilesprite
+		const tilesprite = this.add.tileSprite(1976, 558, 800, 64, "grassHalfMid");
+		tilesprite.scaleY = 1.0041944448172737;
+		tilesprite.setOrigin(0.016576718996191175, 0.016576718996192952);
 		
 		// bridge_1
 		const bridge_1 = this.add.image(277, 491, "bridge");
@@ -114,14 +119,6 @@ class Level extends Phaser.Scene {
 		const flyFly2_1 = new enimesPrafeb(this, 1714, 379, "flyFly1");
 		this.add.existing(flyFly2_1);
 		
-		// score
-		const score = this.add.text(64, 29, "", {});
-		score.text = "0";
-		score.setStyle({"color":"#010101ff","fontSize":"32px","fontStyle":"bold"});
-		
-		// coinScore
-		const coinScore = this.add.image(29, 47, "coinGold");
-		
 		// coinGold_3
 		const coinGold_3 = new coinPrefab(this, 559, 291, "coinGold");
 		this.add.existing(coinGold_3);
@@ -169,11 +166,6 @@ class Level extends Phaser.Scene {
 		// grass_4
 		const grass_4 = this.add.image(1996, 452, "Grass");
 		
-		// grassHalfMid_3
-		const grassHalfMid_3 = this.add.image(2305, 592, "grassHalfMid");
-		grassHalfMid_3.scaleX = 9.813318706969643;
-		grassHalfMid_3.scaleY = 0.917662037774685;
-		
 		// coinGold_8
 		const coinGold_8 = new coinPrefab(this, 2254, 485);
 		this.add.existing(coinGold_8);
@@ -218,11 +210,19 @@ class Level extends Phaser.Scene {
 		const player = this.add.sprite(63, 387, "p1_stand");
 		player.setOrigin(0, 0);
 		
+		// container
+		const container = new scorePrefab(this, 387, 116);
+		this.add.existing(container);
+		
 		// lists
-		const items = [grassHalfMid_2, bridge, bridge_2, bridge_1, grassHalfMid_1, grass, castleCenter, grassHalfMid, flyFly1, slimeWalk1, bridgeLogs, bridge_3, bridge_4, bridge_5, flyFly2_1, bridge_8, slimeWalk1_1, grass_1, grass_2, brickWall, grass_4, grass_3, brickWall_2, grassHalfMid_3, grass_5, brickWall_1, grassHalfMid_4]
+		const items = [grassHalfMid_2, bridge, bridge_2, bridge_1, grassHalfMid_1, grass, castleCenter, grassHalfMid, flyFly1, slimeWalk1, bridgeLogs, bridge_3, bridge_4, bridge_5, flyFly2_1, bridge_8, slimeWalk1_1, grass_1, grass_2, brickWall, grass_4, grass_3, brickWall_2, grass_5, brickWall_1, grassHalfMid_4, tilesprite]
 		const coins = [coinGold_4, coinGold, coinGold_1, coinGold_2, coinGold_3, coinGold_7, coinGold_5, coinGold_10, coinGold_9, coinGold_8, coinGold_6]
 		const bridges = [bridge_8, bridgeLogs]
 		const enimes = [flyFly1, slimeWalk1, slimeWalk1_1, flyFly2_1]
+		
+		// tilesprite (components)
+		new PhysicsBridges(tilesprite);
+		tilesprite.emit("components-awake");
 		
 		// bridge_1 (components)
 		new PhysicsBridges(bridge_1);
@@ -343,10 +343,6 @@ class Level extends Phaser.Scene {
 		new PhysicsBridges(grass_4);
 		grass_4.emit("components-awake");
 		
-		// grassHalfMid_3 (components)
-		new PhysicsBridges(grassHalfMid_3);
-		grassHalfMid_3.emit("components-awake");
-		
 		// coinGold_8 (components)
 		coinGold_8.emit("components-awake");
 		
@@ -369,11 +365,11 @@ class Level extends Phaser.Scene {
 		brickWall_1.emit("components-awake");
 		
 		// player (components)
-		new Physics(player);
 		new Movement(player);
 		player.emit("components-awake");
 		
 		this.tiled_Forest_Background = tiled_Forest_Background;
+		this.tilesprite = tilesprite;
 		this.bridge_1 = bridge_1;
 		this.bridge_2 = bridge_2;
 		this.grassHalfMid_2 = grassHalfMid_2;
@@ -387,8 +383,6 @@ class Level extends Phaser.Scene {
 		this.bridgeLogs = bridgeLogs;
 		this.slimeWalk1_1 = slimeWalk1_1;
 		this.flyFly2_1 = flyFly2_1;
-		this.score = score;
-		this.coinScore = coinScore;
 		this.coinGold_3 = coinGold_3;
 		this.coinGold_5 = coinGold_5;
 		this.coinGold_6 = coinGold_6;
@@ -399,6 +393,7 @@ class Level extends Phaser.Scene {
 		this.coinGold_10 = coinGold_10;
 		this.grassHalfMid_4 = grassHalfMid_4;
 		this.player = player;
+		this.container = container;
 		this.items = items;
 		this.coins = coins;
 		this.bridges = bridges;
@@ -407,6 +402,8 @@ class Level extends Phaser.Scene {
 	
 	/** @type {Phaser.GameObjects.Image} */
 	tiled_Forest_Background;
+	/** @type {Phaser.GameObjects.TileSprite} */
+	tilesprite;
 	/** @type {Phaser.GameObjects.Image} */
 	bridge_1;
 	/** @type {Phaser.GameObjects.Image} */
@@ -433,10 +430,6 @@ class Level extends Phaser.Scene {
 	slimeWalk1_1;
 	/** @type {enimesPrafeb} */
 	flyFly2_1;
-	/** @type {Phaser.GameObjects.Text} */
-	score;
-	/** @type {Phaser.GameObjects.Image} */
-	coinScore;
 	/** @type {coinPrefab} */
 	coinGold_3;
 	/** @type {coinPrefab} */
@@ -457,6 +450,8 @@ class Level extends Phaser.Scene {
 	grassHalfMid_4;
 	/** @type {Phaser.GameObjects.Sprite} */
 	player;
+	/** @type {scorePrefab} */
+	container;
 	/** @type {Array<Phaser.GameObjects.TileSprite|Phaser.GameObjects.Image|enimesPrafeb|bridgePrefab|bridgeVerticalPrefab>} */
 	items;
 	/** @type {coinPrefab[]} */
@@ -483,8 +478,7 @@ class Level extends Phaser.Scene {
 			this.bridges[i].player = this.player
 
 		this.tiled_Forest_Background.setScrollFactor(0);
-		this.coinScore.setScrollFactor(0);
-		this.score.setScrollFactor(0);
+		this.container.setScrollFactor(0);
 		this.physics.add.collider(this.player, this.items);
 		this.physics.add.collider(this.player, this.coins);
 		
@@ -496,9 +490,7 @@ class Level extends Phaser.Scene {
 	}
 	
 	update() {
-		this.score.setText(sessionStorage.getItem("scoreValue"))
-
-
+		
 		if(this.player.x > 2340){
 			this.winSound.play()
 			this.scene.start("MiramarLevel")

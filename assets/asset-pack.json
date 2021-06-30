@@ -2,9 +2,24 @@
     "section1": {
         "files": [
             {
+                "url": "assets/images/15.png",
+                "type": "image",
+                "key": "15"
+            },
+            {
+                "url": "assets/images/2.png",
+                "type": "image",
+                "key": "2"
+            },
+            {
                 "url": "assets/animations/actor-animations.json",
                 "type": "animation",
                 "key": "actor-animations"
+            },
+            {
+                "url": "assets/images/BG.png",
+                "type": "image",
+                "key": "BG"
             },
             {
                 "url": "assets/images/brickWall.png",
@@ -85,6 +100,11 @@
                 "key": "coinPrefab"
             },
             {
+                "url": "assets/images/Crate.png",
+                "type": "image",
+                "key": "Crate"
+            },
+            {
                 "url": "assets/animations/enimes-animations.json",
                 "type": "animation",
                 "key": "enimes-animations"
@@ -100,7 +120,6 @@
                 "url": [
                     "assets/components/EventComponent.js",
                     "assets/components/Movement.js",
-                    "assets/components/Physics.js",
                     "assets/components/PhysicsBridges.js"
                 ],
                 "type": "scripts",
@@ -127,11 +146,6 @@
                 "key": "Grass"
             },
             {
-                "url": "assets/images/Grass (1).png",
-                "type": "image",
-                "key": "Grass (1)"
-            },
-            {
                 "url": "assets/images/Grass (2).png",
                 "type": "image",
                 "key": "Grass (2)"
@@ -147,11 +161,6 @@
                 ],
                 "type": "audio",
                 "key": "jump"
-            },
-            {
-                "url": "assets/images/ladder_mid.png",
-                "type": "image",
-                "key": "ladder_mid"
             },
             {
                 "url": "assets/Level.js",
@@ -221,6 +230,13 @@
                 "key": "p1_walk08"
             },
             {
+                "url": [
+                    "assets/prefab/scorePrefab.js"
+                ],
+                "type": "scripts",
+                "key": "scorePrefab"
+            },
+            {
                 "url": "assets/images/SignArrow.png",
                 "type": "image",
                 "key": "SignArrow"
@@ -251,6 +267,11 @@
                 ],
                 "type": "audio",
                 "key": "smb_stage_clear"
+            },
+            {
+                "url": "assets/images/StoneBlock.png",
+                "type": "image",
+                "key": "StoneBlock"
             },
             {
                 "url": "assets/images/tiled_Forest Background.png",
