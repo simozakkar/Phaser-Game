@@ -17,7 +17,7 @@ class enimesPrafeb extends Phaser.GameObjects.Sprite {
 
 		this.initX = x;
 		this.step = 3;
-		this.nameTexture = texture.substring(0, 3);
+		this.nameTexture = (texture[0]=='f')? "fly": "slim";
 		this.play(this.nameTexture+'Walk');
 		this.jumpSound = this.scene.sound.add('jump')
 		this.lifLostSound = this.scene.sound.add('life lost sound')

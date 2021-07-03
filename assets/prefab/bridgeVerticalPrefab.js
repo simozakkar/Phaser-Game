@@ -14,7 +14,7 @@ class bridgeVerticalPrefab extends Phaser.GameObjects.Sprite {
 		/* START-USER-CTR-CODE */
 
 		/** @type {Phaser.GameObjects.Sprite} */
-		this.player = this;
+		this.player
 		// each time the scene is updated, call the `update` method
         scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
 		this.initY = y;
